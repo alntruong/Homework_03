@@ -1,1 +1,3 @@
 # Homework_03
+
+In this assignment, we were asked to create a secure random password generator for a client. The client wanted to be presented with a series of prompts for password criteria when the generate button was pressed. The client wanted to be able to select which criteria to include in the password. When prompted for the length of the password, it should contain no less than 8 characters and no more than 128 characters. The client also wanted to be able to select from lowercase, uppercase, numeric, and/or special characters, which should be validated so that at least one character type is selected. When all the prompts are answered, the password is then generated to match the selected criteria and is then displayed to the page. 
