@@ -20,18 +20,8 @@ function getPasswordOptions() {
     prompt('Between 8-128 characters, how many characters would you like your passowrd to contain?')
   );
 
-  if (Number.isNaN(length)) {
-    alert('Password length must be provided as a number');
-    return null;
-  }
-
-  if (length < 8) {
-    alert('Sorry, but your password length must be at least 8 characters');
-    return null;
-  }
-
-  if (length > 128) {
-    alert('Sorry, but your password length must less than 129 characters');
+  if (length < 8 ||length > 128 ||Number.isNaN(length)) {
+    alert('Invalid Password Length');
     return null;
   }
 
