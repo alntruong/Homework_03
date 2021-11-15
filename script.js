@@ -41,12 +41,7 @@ function getPasswordOptions() {
     'Would you like for your password to contain uppercase characters? If so, click OK.'
   );
 
-  if (
-    hasSpecialCharacters === false &&
-    hasNumericCharacters === false &&
-    hasLowerCasedCharacters === false &&
-    hasUpperCasedCharacters === false
-  ) {
+  if (!hasSpecialCharacters && !hasNumericCharacters & !hasLowerCasedCharacters && !hasUpperCasedCharacters) {
     alert('Sorry, but your password should contain at least one character type.');
     return null;
   }
